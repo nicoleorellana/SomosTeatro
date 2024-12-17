@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Somos Teatro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>[x-cloak]{display:none}</style>
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="bg-black text-white overflow-y-none">
+    <div class="relative w-screen h-screen overflow-y-scroll flex flex-col justify-between" style="background-image: url(../images/MainBG.jpg); background-size: cover; background-position: bottom center;">
+
+        <!-- Construction Message -->
+        <div class="w-full grow flex flex-col items-center justify-center space-y-8">
+            <div class="text-center space-y-6">
+                <img src="../images/MainLogo.png" class="w-auto h-44 mx-auto" alt="Logo">
+
+            <div>
+                <h1 class="text-4xl font-bold mt-5">SITIO EN CONSTRUCCIÓN</h1>
+                <div class="text-xl mt-2">
+                    <p>Estamos trabajando para brindarte una mejor experiencia</p>
+                    <p class="mt-2">¡Vuelve pronto!</p>
+                </div>
+                <div class="animate-pulse mt-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </div>
+                <div class="flex mt-4 flex-wrap justify-center">
+                    <a href="#" class="w-36 h-56 bg-red-500 text-center rounded-3xl relative m-2 transition hover:scale-110 shadow hover:shadow-xl" style="background-image: url(../images/drama.png); background-size: cover; background-position: bottom center;">
+                        <div class="bg-black/70 absolute bottom-10 left-2 right-2 h-5 blur"></div>
+                        <div class="absolute bottom-10 left-2 right-2">DRAMA</div>
+                    </a>
+                    <a href="#" class="w-36 h-56 bg-red-500 text-center rounded-3xl relative m-2 transition hover:scale-110 shadow hover:shadow-xl" style="background-image: url(../images/comedia.png); background-size: cover; background-position: bottom center;">
+                        <div class="bg-black/70 absolute bottom-10 left-2 right-2 h-5 blur"></div>
+                        <div class="absolute bottom-10 left-2 right-2">COMEDIA</div>
+                    </a>
+                    <a href="#" class="w-36 h-56 bg-red-500 text-center rounded-3xl relative m-2 transition hover:scale-110 shadow hover:shadow-xl" style="background-image: url(../images/musicales.png); background-size: cover; background-position: bottom center;">
+                        <div class="bg-black/70 absolute bottom-10 left-2 right-2 h-5 blur"></div>
+                        <div class="absolute bottom-10 left-2 right-2">MUSICALES</div>
+                    </a>
+                    <a href="#" class="w-36 h-56 bg-red-500 text-center rounded-3xl relative m-2 transition hover:scale-110 shadow hover:shadow-xl" style="background-image: url(../images/infantiles.png); background-size: cover; background-position: bottom center;">
+                        <div class="bg-black/70 absolute bottom-5 left-2 right-2 h-12 blur"></div>
+                        <div class="absolute bottom-7 left-2 right-2">TEATRO INFANTIL</div>
+                    </a>
+                    <a href="#" class="w-36 h-56 bg-red-500 text-center rounded-3xl relative m-2 transition hover:scale-110 shadow hover:shadow-xl" style="background-image: url('../images/stand up.png'); background-size: cover; background-position: bottom center;">
+                        <div class="bg-black/70 absolute bottom-10 left-2 right-2 h-5 blur"></div>
+                        <div class="absolute bottom-10 left-2 right-2">STAND UP</div>
+                    </a>
+                    <a href="#" class="w-36 h-56 bg-red-500 text-center rounded-3xl relative m-2 transition hover:scale-110 shadow hover:shadow-xl" style="background-image: url('../images/t capacitacion.png'); background-size: cover; background-position: bottom center;">
+                        <div class="bg-black/70 absolute bottom-5 left-2 right-2 h-12 blur"></div>
+                        <div class="absolute bottom-7 left-2 right-2">TEATRO CAPACITACIÓN</div>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col justify-end">
+            <footer class="w-full h-auto p-5 text-xs">
+                <div class="flex flex-col md:flex-row container mx-auto space-y-4 md:space-y-0">
+                    <!-- Logo Section -->
+                    <div class="flex justify-center md:justify-start">
+                        <img src="../images/MainLogo.png" class="w-auto h-16 md:h-24" alt="Logo">
+                    </div>
+            
+                    <!-- Address Section -->
+                    <div class="grow py-2 text-center md:text-left md:px-8">
+                        <p>BADAJOZ 100<br><span class="font-thin">OF.107 LAS CONDES</span><br>REGION METROPOLITANA / CHILE</p>
+                        <p class="pt-2"><span class="font-thin">&#67;&#79;&#78;&#84;&#65;&#67;&#84;&#79;&#64;&#83;&#79;&#77;&#79;&#83;&#84;&#82;&#69;&#65;&#84;&#82;&#79;&#46;&#67;&#76;</span><br>+56&nbsp;9&nbsp;9699&nbsp;7829</p>
+            
+                    </div>
+            
+                    <!-- Rights Section -->
+                    <div class="flex flex-col items-center md:items-end place-self-stretch justify-between py-2">
+                        <h3 class="border-b-2 border-red-500 w-36 font-bold pb-1 text-center md:text-left">QUIENES SOMOS</h3>
+                        <p class="font-thin text-center md:text-right">© DERECHOS DE SOMOS TEATRO.<br class="md:hidden"> TODOS LOS DERECHOS RESERVADOS.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
