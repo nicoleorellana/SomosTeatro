@@ -150,127 +150,60 @@
                   </li>
               
                   <li>
-                    <a href="#" class="block transition hover:text-white">GÉNEROS</a>
+                    <a href="#" class="block transition hover:text-white">MIS OBRAS</a>
                   </li>
                 
-                  <li class="rtl:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
-                    </svg>
-                  </li>
-              
-                  <li>
-                    <a href="#" class="block transition hover:text-white">COMEDIA</a>
-                  </li>
-              
-                  <li class="rtl:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
-                    </svg>
-                  </li>
-              
-                  <li>
-                    <a href="#" class="block transition hover:text-white">OBRA</a>
-                  </li>
-                </ol>
+                  
               </nav>
         </div>
 
         
-   <!-- Reseña y detalle -->
+   <!--detalle -->
    <div class="p-6 pt-10 rounded-lg w-full max-w-5xl mx-auto">
-    <div class="flex flex-col md:flex-row items-center gap-8 md-order-2">
-      <!-- Contenido Texto -->
-      <div class="flex flex-col w-full md:w-1/2">
-        <h2 class="text-2xl font-bold text-white mb-4">Título de la Obra</h2>
-        <p class="text-white mb-6 text-sm">
-          Esta es una breve reseña de la obra. Proporciona una idea de la trama o el contenido principal, destacando los puntos más importantes y cautivadores para el espectador.
-        </p>
-        <table class="table-auto text-white text-sm mb-6">
-          <tbody>
-            <tr>
-              <td>COMPAÑÍA</td>
-              <td>Nombre de la Compañía</td>
-            </tr>
-            <tr>
-              <td>DURACIÓN</td>
-              <td>1h 30m</td>
-            </tr>
-            <tr>
-              <td>PÚBLICO</td>
-              <td>General</td>
-            </tr>
-            <tr>
-              <td>ESCENARIO</td>
-              <td>Teatro Principal</td>
-            </tr>
-            <tr>
-              <td>GÉNERO</td>
-              <td>Comedia</td>
-            </tr>
-            <tr>
-              <td>DIRECTORES</td>
-              <td>Juan Pérez, María López</td>
-            </tr>
-            <tr>
-              <td>ACTORES</td>
-              <td>Carlos Ramírez, Ana García</td>
-            </tr>
-            <tr>
-              <td class="py-8">VALOR DE LA FUNCIÓN</td>
-              <td>$20.000</td>
-            </tr>
-          </tbody>
-        </table>
-  
-        <!-- Botón Video -->
-        <div>
-          <button class="text-white py-2 px-6 rounded-md font-medium flex items-center justify-center gap-2" 
-          style="background-color: #222427;" onmouseover="this.style.backgroundColor='#bf1d00'" onmouseout="this.style.backgroundColor='#222427'">
-            VIDEO
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.502 2.13a1 1 0 01-1.5-.868V8.57a1 1 0 011.5-.868l3.502 2.13a1 1 0 010 1.736z" />
-            </svg>
-          </button>
+    <div class="flex flex-col items-center"> 
+        <div class="overflow-x-auto w-full">
+            <table class="table-auto w-full max-w-lg mx-auto border-collapse border-spacing-0">
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="px-4 py-4 font-bold text-left align-middle">NOMBRE</th> <!-- Ajuste de padding -->
+                        <th class="px-4 py-4 font-bold text-left align-middle">ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="px-4 py-4 text-left flex items-center">INVENCIBLE</td> <!-- Asegurando alineación -->
+                        <td class="px-4 py-4 align-middle">
+                            <button 
+                                class="w-full bg-red-800 hover:bg-red-600 text-white py-2 rounded-md font-medium">
+                                VER/EDITAR
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-4 text-left align-middle">LA VECINA DE ARRIBA</td> <!-- Segunda fila alineada -->
+                        <td class="px-4 py-4 align-middle">
+                            <button class="w-full bg-red-800 hover:bg-red-600 text-white py-2 rounded-md font-medium">VER/EDITAR</button>
+              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="padding-top: 3rem;"> <!-- Usar padding-top directamente en la celda -->
+                            <button class="w-full bg-red-800 hover:bg-red-600 text-white py-2 rounded-md font-medium">NUEVA OBRA</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-      </div>
-  
-      <!-- Imagen -->
-      <div class="flex justify-center items-center w-full md:w-1/2 md-order-1 ">
-        <div style="width: 250px; height: 250px; background-color: white; border-radius: 50%; overflow: hidden; border: 4px solid white;">
-          <img src="../images/mascara.jpg" alt="Imagen de la obra" style="width: 100%; height: 100%; object-fit: cover;" />
-        </div>
-      </div>
     </div>
-  
-    <!-- Enlace de Volver -->
-    <div class="flex justify-center mt-8 mb-0.5">
-      <a href="#" class="flex items-center text-white hover:text-red-500">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-2">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H7m6 6l-6-6 6-6"></path>
-        </svg>
-        Volver
-      </a>
-    </div>
-  </div>
-  
-  
-    </div>
+</div>    </div>
 </div>
+
+
+    
+  
+
+        
 
 
 <!-- FOOTER -->

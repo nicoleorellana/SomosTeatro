@@ -8,6 +8,7 @@
     <!-- Include the Alpine library on your page -->
     <script src="https://unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-black text-white overflow-y-none">
     <div class="relative w-screen h-screen overflow-y-scroll flex flex-col justify-between" style="background-image: url(../images/MainBG.jpg); background-size: cover; background-position: bottom center;">
@@ -140,137 +141,129 @@
             <!-- Imagen circular -->
             <div class="w-[90px] h-[90px] bg-center bg-cover rounded-full overflow-hidden"> 
                 <img src="../images/mascara.jpg" alt="Somos Teatro" class="w-full h-full object-cover" />
-            </div>                
-            <!-- Breadcrumb -->
-            <nav aria-label="Breadcrumb" class="text-white text-sm">
-                <ol class="flex items-center gap-1">
-                
-                  <li class="rtl:rotate-180">
-                   
-                  </li>
-              
-                  <li>
-                    <a href="#" class="block transition hover:text-white">GÉNEROS</a>
-                  </li>
-                
-                  <li class="rtl:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
-                    </svg>
-                  </li>
-              
-                  <li>
-                    <a href="#" class="block transition hover:text-white">COMEDIA</a>
-                  </li>
-              
-                  <li class="rtl:rotate-180">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-4"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m9 20.247 6-16.5" />
-                    </svg>
-                  </li>
-              
-                  <li>
-                    <a href="#" class="block transition hover:text-white">OBRA</a>
-                  </li>
-                </ol>
-              </nav>
+            </div>             
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="text-white text-sm">
+          <ol class="flex items-center gap-1">
+            <li class="rtl:rotate-180"></li>
+            <li>
+              <a href="#" class="block transition hover:text-white">LINEA DE TIEMPO DE LA OBRA</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+  
+
+      <!-- Resumen y disponibilidad, términos del servicio -->
+      <div class="p-4 flex flex-col lg:flex-row items-start lg:items-center lg:space-x-10">
+        <!-- Línea de tiempo -->
+        <div class="w-full lg:w-1/2" style="max-width: 25rem;">
+          <div>
+            <p class="text-xs text-gray-300">CONTROL VENTAS / DRAMA</p>
+            <h2 class="text-xl font-bold mb-4">INVENCIBLE / FUNCIÓN 23/08/2025</h2>
+            <div class="space-y-6">
+              <!-- Evento -->
+              <div>
+                <h3 class="font-bold">FIRMA CLIENTE</h3>
+                <p class="text-xs text-gray-300">
+                  REALIZADA EL DÍA <span class="font-bold">22/01/2025</span>
+                </p>
+                <div class="pt-2">
+                  <button class="px-4 py-2 border-4 border-green-500 text-white bg-green-500 rounded-md hover:bg-green-700 hover:border-green-700 transition duration-300">
+                    VER EL CONTRATO DE CLIENTE
+                  </button>
+                </div>
+              </div>
+              <!-- Evento -->
+              <div>
+                <h3 class="font-bold">CONFIRMACIÓN DE FECHA Y FIRMA COMPAÑÍA</h3>
+                <p class="text-xs text-gray-300">
+                  REALIZADA EL DÍA <span class="font-bold">19/07/2025</span>
+                </p>
+                <div class="pt-2">
+                  <button class="px-4 py-2 border-4 border-green-500 text-gray-700 bg-white rounded-md hover:bg-green-500 hover:text-white transition duration-300">
+                    VER EL CONTRATO DE CÍA. TEATRO
+                  </button>
+                </div>
+              </div>
+              <!-- Evento -->
+              <div>
+                <h3 class="font-bold">SOLICITUD DE FECHA</h3>
+                <p class="text-xs text-gray-300">REALIZADA EL DÍA</p>
+                <p class="text-xs text-gray-300">18/07/2025</p>
+                <p class="pt-2 text-xs text-gray-300">POR EL CLIENTE</p>
+                <p class="text-xs text-gray-300">ANTOFAGASTA MINERALS</p>
+                <p class="pt-2 text-xs text-gray-300">FECHA ACEPTADA</p>
+                <p class="text-xs text-gray-300">19/01/2025</p>
+              </div>
+              <!-- Evento -->
+              <div>
+                <h3 class="font-bold">DISPONIBILIDAD DE FECHA</h3>
+                <p class="text-xs text-gray-300">FIJADA POR LA COMPAÑÍA EL DÍA</p>
+                <p class="text-xs text-gray-300">12/07/2025</p>
+              </div>
+            </div>
+          </div>
         </div>
+      
+        <!-- Contrato -->
+        <div class="w-full lg:w-1/2 text-center mt-8 lg:mt-0">
+          <div class="bg-white text-black rounded-lg p-6 shadow-lg" style="max-width: 50rem; margin: auto;">
+            <!-- Título centrado -->
+            <h2 class="text-xl font-bold text-center text-green-500 mb-4">CONTRATO C.TEATRO - ADMINISTRACIÓN</h2>
+            <div class="flex flex-col items-center justify-center mt-4">
+              <p class="text-sm font-medium text-red-500 text-center">
+                CONTRATO POR FUNCIÓN ÚNICO PARA
+              </p>
+              <h2 class="text-lg font-bold text-gray-500 mb-7 text-center">
+                OBRA DE TEATRO INVENCIBLE
+              </h2>
+              
+              <!-- Contenedor con scroll -->
+              <div class="text-sm text-gray-500 text-center max-h-40 overflow-y-auto">
+                <p>
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUPTAT.
+                </p>
+                <p>
+                  UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL UT ALIQUIP EX EA COMMODO CONSEQUAT.
+                </p>
+                <p>
+                  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUPTAT.
+                </p>
+                <p>
+                  UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL UT ALIQUIP EX EA COMMODO CONSEQUAT.
+                </p>
+              </div>
+            </div>
+        
+            <!-- Botones de acción -->
+            <div class="flex justify-center space-x-4 pt-4">
+              <button class="text-gray-500 px-4 py-2 rounded hover:text-red-500">RECHAZAR</button>
+              <button class="bg-red-800 text-white px-4 py-2 rounded hover:bg-red-700">ACEPTAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Enlace Volver -->
+      <div class="flex justify-center items-center mt-8 mb-0.5">
+        <a href="#" class="flex items-center text-white hover:text-red-500">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H7m6 6l-6-6 6-6"></path>
+          </svg>
+          Volver
+        </a>
+      </div>
+      </div>
+  </div>
+
+                
+              
+
+    
+  
 
         
-   <!-- Reseña y detalle -->
-   <div class="p-6 pt-10 rounded-lg w-full max-w-5xl mx-auto">
-    <div class="flex flex-col md:flex-row items-center gap-8 md-order-2">
-      <!-- Contenido Texto -->
-      <div class="flex flex-col w-full md:w-1/2">
-        <h2 class="text-2xl font-bold text-white mb-4">Título de la Obra</h2>
-        <p class="text-white mb-6 text-sm">
-          Esta es una breve reseña de la obra. Proporciona una idea de la trama o el contenido principal, destacando los puntos más importantes y cautivadores para el espectador.
-        </p>
-        <table class="table-auto text-white text-sm mb-6">
-          <tbody>
-            <tr>
-              <td>COMPAÑÍA</td>
-              <td>Nombre de la Compañía</td>
-            </tr>
-            <tr>
-              <td>DURACIÓN</td>
-              <td>1h 30m</td>
-            </tr>
-            <tr>
-              <td>PÚBLICO</td>
-              <td>General</td>
-            </tr>
-            <tr>
-              <td>ESCENARIO</td>
-              <td>Teatro Principal</td>
-            </tr>
-            <tr>
-              <td>GÉNERO</td>
-              <td>Comedia</td>
-            </tr>
-            <tr>
-              <td>DIRECTORES</td>
-              <td>Juan Pérez, María López</td>
-            </tr>
-            <tr>
-              <td>ACTORES</td>
-              <td>Carlos Ramírez, Ana García</td>
-            </tr>
-            <tr>
-              <td class="py-8">VALOR DE LA FUNCIÓN</td>
-              <td>$20.000</td>
-            </tr>
-          </tbody>
-        </table>
-  
-        <!-- Botón Video -->
-        <div>
-          <button class="text-white py-2 px-6 rounded-md font-medium flex items-center justify-center gap-2" 
-          style="background-color: #222427;" onmouseover="this.style.backgroundColor='#bf1d00'" onmouseout="this.style.backgroundColor='#222427'">
-            VIDEO
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.502 2.13a1 1 0 01-1.5-.868V8.57a1 1 0 011.5-.868l3.502 2.13a1 1 0 010 1.736z" />
-            </svg>
-          </button>
-        </div>
-      </div>
-  
-      <!-- Imagen -->
-      <div class="flex justify-center items-center w-full md:w-1/2 md-order-1 ">
-        <div style="width: 250px; height: 250px; background-color: white; border-radius: 50%; overflow: hidden; border: 4px solid white;">
-          <img src="../images/mascara.jpg" alt="Imagen de la obra" style="width: 100%; height: 100%; object-fit: cover;" />
-        </div>
-      </div>
-    </div>
-  
-    <!-- Enlace de Volver -->
-    <div class="flex justify-center mt-8 mb-0.5">
-      <a href="#" class="flex items-center text-white hover:text-red-500">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5 mr-2">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H7m6 6l-6-6 6-6"></path>
-        </svg>
-        Volver
-      </a>
-    </div>
-  </div>
-  
-  
-    </div>
-</div>
 
 
 <!-- FOOTER -->
